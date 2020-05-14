@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    hi
+    <i class="fas fa-search"></i>
+    <script>
+        fetch("https://covid-19-data.p.rapidapi.com/help/countries?format=json", {
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "covid-19-data.p.rapidapi.com",
+                "x-rapidapi-key": "233cfbb5a8msh6a7708a9921c9b0p128c64jsn230d05a19f42"
+            }
+        })
+        .then(response => {
+            console.log(response);
+        })
+        .catch(err => {
+            console.log(err);
+        });
+        </script>
+</body>
+</html>
